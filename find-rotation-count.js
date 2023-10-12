@@ -5,7 +5,7 @@ function findRotationCount(arr) {
     while (LI < RI) {
         let midIdx = Math.floor((LI+RI)/2);
         if (arr[midIdx] > arr[midIdx + 1]) {
-            return midIdx;
+            return midIdx + 1;
         }
         if (arr[LI] < arr[RI]) {
             return 0;
